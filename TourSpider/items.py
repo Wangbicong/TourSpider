@@ -5,10 +5,18 @@
 # See documentation in:
 # http://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class TourspiderItem(scrapy.Item):
+class TourspiderItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+
+    item_name = Field()
+    start_place = Field()
+    end_place = Field()
+    price = Field()
+    start_date = Field()
+    duration = Field()
+    tour_route = Field()
+    hotel = Field()
