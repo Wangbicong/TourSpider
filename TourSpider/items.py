@@ -19,4 +19,4 @@ class TourspiderItem(Item):
     start_date = Field()
     duration = Field()
     tour_route = Field()
-    hotel = Field()
+    # hotel = Field()
