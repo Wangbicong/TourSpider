@@ -13,6 +13,7 @@ class TourspiderItem(Item):
     # name = scrapy.Field()
 
     item_name = Field()
+    url = Field()
     start_place = Field()
     end_place = Field()
     price = Field()

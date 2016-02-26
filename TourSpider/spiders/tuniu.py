@@ -20,6 +20,7 @@ class TuniuSpider(Spider):
             item = TourspiderItem()
 
             item['item_name'] = site.xpath('dl[@class="detail"]/dt/p[@class="title"]/a/@title').extract()
+            item['url'] = site.xpath('dl[@class="detail"]/dt/p[@class="title"]/a/@href').extract()
             item['start_place'] = site.xpath('dl[@class="detail"]/dt/p[@class="subtitle"]/'
                                              'span[@class="c_green"]/text()').extract()
             item['end_place'] = response.url.split('/')[-3].split('-')[-1]
