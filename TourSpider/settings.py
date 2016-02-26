@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'TourSpider.spiders'
 #USER_AGENT = 'TourSpider (+http://www.yourdomain.com)'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS=32
-CONCURRENT_ITEMS=10000
+CONCURRENT_ITEMS = 10000
 
 # Configure a delay for requests for the same website (default: 0)
 # See http://scrapy.readthedocs.org/en/latest/topics/settings.html#download-delay

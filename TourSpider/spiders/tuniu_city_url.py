@@ -14,6 +14,6 @@ class TuniuUrlSpider(Spider):
 
         for sites in response.xpath('//div[@class="line_right"]'):
             for site in sites.xpath('//a/@href'):
-                with codecs.open('TourSpider/data/tuniu_city_url', 'a', 'utf-8') as f:
+                with codecs.open('TourSpider/data/tuniu_end_city&url', 'a', 'utf-8') as f:
                     f.write(site.extract()+'\n')
 

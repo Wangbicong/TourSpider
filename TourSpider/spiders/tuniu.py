@@ -8,7 +8,7 @@ class TuniuSpider(Spider):
     allowed_domains = ['tuniu.com']
 
     start_urls = []
-    with open('TourSpider/data/tuniu_city_url') as city_url_file:
+    with open('TourSpider/data/tuniu_url') as city_url_file:
         for city_url in city_url_file:
             start_urls.append(city_url.strip())
 
